@@ -158,12 +158,13 @@ h2 {
 }
 
 .headings h1 {
+
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.names h1 {
+.names h1{
     color: #2e2e2e;
     font-size: .9rem;
     text-transform: uppercase;
@@ -283,7 +284,7 @@ i {
 }
 
 .happyclient {
-
+   
     width: 100%;
     height: 100vh;
     padding: 80px 0;
@@ -292,18 +293,30 @@ i {
 .box {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
-    ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3) ;
     border-radius: 2px;
     transition: 0.3s ease;
+    padding: 10px ;
 }
 
 .box:hover {
-    background: #16c9f6;
+    background:  #7fbfa9;
 }
 
 .box:hover p {
     color: white;
+}
+.box h1{
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.box h2{
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .carousel-indicators {
@@ -313,7 +326,7 @@ i {
 }
 
 .carousel-indicators button {
-    background: #16c9f6 !important;
+    background: #50d1c0 !important;
 }
 
 .box a img {
@@ -336,4 +349,103 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+.contactus:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: -1;
+background: linear-gradient(330deg, #9ecd9f 55%, #fff 0%);
+}
+.form-button button{
+    border: 1px solid #9ecd9f;
+    text-decoration: none;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    font-weight: bold;
+    outline: none;
+    color: #9ecd9f;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    background: #9ecd9f;
+}
+form:hover .form-button button{
+    background: white;
+    color: #9ecd9f;
+    border: 1px solid #9ecd9f;
+    box-shadow:  0 0 20px 0 rgba(0, 0, 0, .3);
+}
+::placeholder{
+   color: #1d1c1c;
+}
+.newsletter{
+width: 100%;
+height: auto;
+margin: 80px auto;
+}
+.newsinput{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+}
+.input-group-text{
+    color: white!important;
+    background: #9ecd9f !important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 130px;
+    min-height: 40px;
+}
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #7fc880 ;
+    position: relative;
+}
+.footersection p{
+    color: #fff;
+}
+.footersection li a{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.footersection h3{
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+}
+#mybtn{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #7fc880;
+    padding: 10px;
+    border-radius: 10px;
+}
+#mybtn:hover{
+    background: #444444;
+    color: white;
 }
